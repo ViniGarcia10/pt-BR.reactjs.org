@@ -47,7 +47,9 @@ class Calculator extends React.Component {
         <legend>Informe a temperatura em Celsius:</legend>
         <input
           value={temperature}
-          onChange={this.handleChange} />
+          onChange={this.handleChange}
+          type='number'
+          />
         <BoilingVerdict
           celsius={parseFloat(temperature)} />
       </fieldset>
